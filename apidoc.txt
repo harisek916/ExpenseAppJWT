@@ -1,0 +1,51 @@
+======1)api for listing all transactions=====================
+    url:http://127.0.0.1:8000/api/v1/transactions/
+    method:get
+    data:nill
+    authorization:nill
+
+
+=========2) api for adding new transaction===================
+    url:http://127.0.0.1:8000/api/v1/transactions/
+    method:post
+    data:{
+            "title": "house emi paid",
+            "type": "expenses",
+            "category": "miscellaneous",
+            "amount": 20000,
+            "user": "hari"
+        }
+
+    authorization:nill
+
+======3)api for fetching a specific transaction detail =====================
+    url:http://127.0.0.1:8000/api/v1/transactions/{id}/
+    method:get
+    data:nill
+    authorization:nill
+
+
+=========4) api for updating new transaction===================
+    url:http://127.0.0.1:8000/api/v1/transactions/{id}/
+    method:put
+    data:{
+                "id": 1,
+                "title": "house emi paid",
+                "type": "expenses",
+                "category": "miscellaneous",
+                "amount": 20000,
+                "created_date": "2024-02-20T16:35:08.209705Z",
+                "user": "hari"
+        }
+
+    authorization:nill
+
+
+
+
+
+======5)api for fetching deleting specific transaction  =====================
+    url:http://127.0.0.1:8000/api/v1/transactions/{id}/
+    method:delete
+    data:nill
+    authorization:nill
